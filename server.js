@@ -10,10 +10,10 @@ const logger = require('morgan'); // for logging in terminal
 const db = require('./database/taskmanager-db');// database connection
 
 // tell app to use npm packages
+app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(expressValidator());
-app.use(cookieParser());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(expressValidator());

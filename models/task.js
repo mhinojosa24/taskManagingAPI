@@ -7,7 +7,7 @@ const TaskSchema = new Schema({
   description: {type: String},
   date: {type: Date},
   userId: [{type: Schema.Types.ObjectId, ref: 'User', default: [""]}],
-
+  
 }, {
   timestamps: true,
 });
