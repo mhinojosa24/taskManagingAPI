@@ -58,5 +58,15 @@ router.put('/user/:userid/task/:taskid/edit', (req, res) => {
 });
 
 
+// delete a task
+router.delete('/user/:userid/task/:taskid', (req, res) => {
+  let taskId = req.params.taskid;
+
+  Task.findByIdAndRemove(taskId).then(task => {
+    return res.status(200).send({message: 'Successfully deleted task.'});
+  }).catch(err => {
+    console.log(err.message);
+  });
+});
 
 module.exports = router;
