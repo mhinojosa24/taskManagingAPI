@@ -26,9 +26,11 @@ app.use(expressValidator());
 // const taskRouter = require('./routers/task');
 const auth = require('./controllers/user');
 const task = require('./controllers/task');
+const comment = require('./controllers/comment');
 
 app.use(auth);
 app.use(task);
+app.use(comment);
 
 // app.use(taskRouter);
 
