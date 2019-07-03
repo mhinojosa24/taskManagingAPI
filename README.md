@@ -3,5 +3,5 @@
 
 ## [API Proposal](proposal.md)
 
-## Check Out My Documentation!
+## [Check Out My Documentation!](https://documenter.getpostman.com/view/2923657/S1a8zQLv?version=latest)
 https://documenter.getpostman.com/view/2923657/S1a8zQLv?version=latest
