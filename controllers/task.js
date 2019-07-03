@@ -32,7 +32,8 @@ router.post('/user/:id/task/new', checkAuth, (req, res) => {
 
 // show a task
 router.get('/user/:userid/task/:taskid', (req, res) => {
-    // console.log(req.para);
+    console.log("getting this ");
+    console.log(req.user);
   if (req.params.taskid in req.user.tasks) {
     Task.findById(req.params.taskid).then((task) => {
       return res.status(200).send(task);

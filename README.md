@@ -3,8 +3,5 @@
 
 ## [API Proposal](proposal.md)
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+## Check Out My Documentation!
+https://documenter.getpostman.com/view/2923657/S1a8zQLv?version=latest
