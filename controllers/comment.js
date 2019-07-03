@@ -8,7 +8,7 @@ const Task = require('../models/task');
 router.post('/task/:taskid/comments', (req, res) => {
   const comment = new Comment(req.body);
   console.log('this is the user id => ', req.user);
-  comment.userId = req.user._id;
+  // comment.userId = req.user._id;
 
   comment.save().then(comment => {
     let task = req.params.taskid;
